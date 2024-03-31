@@ -4,6 +4,8 @@
 
 TextAlive APIを使った、歌詞がアニメーションするものです。バラバラな文字が、形成されます。
 
+TextAlive API is used to animate lyrics. Disparate letters are formed.
+
 ## Demo
 
 https://misora.main.jp/ea4azmyb/text/
@@ -20,6 +22,12 @@ Run this command in your terminal to open a local server at localhost:8080
 ```
 npm run dev
 ```
+
+## Song
+
+『初音ミク「マジカルミライ 2023」楽曲コンテスト』の受賞作品6曲
+
+https://magicalmirai.com/2023/procon/
 
 ## Resource
 
