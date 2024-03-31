@@ -4,6 +4,8 @@
 
 TextAlive APIを使った、歌詞がアニメーションするものです。バラバラな文字が、形成されます。
 
+実行するには、TextAlive APIのトークンが必要です。
+
 TextAlive API is used to animate lyrics. Disparate letters are formed.
 
 ## Demo
