@@ -19,10 +19,9 @@ const gui = new GUI({width:180});
 gui.domElement.id = 'gui';
 gui.close();
 
-// Three.js でテキストを生成するために必要なフォントデータ
+// Three.js でテキストを生成するために必要なフォントデータを読み込む
 const fontLoader = new FontLoader();
 const Ffont  = fontLoader.parse(Typeface);
-
 
 
 window.onload = function(){
@@ -54,7 +53,7 @@ const player = new Player({
     //mediaBannerPosition:"top", //音源メディアの情報を表示する位置を指定する。座標指定ではない。
 });
 
-//デバック時のみ[0~100]
+//★デバック時のみ[0~100]
 player.volume = 10;
 
 /////////////////////////////////////////
@@ -309,9 +308,6 @@ Object.assign(stats.dom.style, {'position': 'fixed','height': 'max-content',
 
 const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 1000)
 camera.position.set(0.0, 0.0, 120.0);
-camera.layers.enable( 0 ); // enabled by default
-camera.layers.enable( 1 );
-// camera.layers.set(0);
 scene.add(camera)
 
 /////////////////////////////////////////////////////////////////////////
