@@ -8,6 +8,8 @@ TextAlive APIを使った、歌詞がアニメーションするものです。�
 
 TextAlive API is used to animate lyrics. Disparate letters are formed.
 
+A TextAlive API token is required to run it.
+
 ## Demo
 
 https://misora.main.jp/ea4azmyb/text/
