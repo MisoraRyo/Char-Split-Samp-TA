@@ -39,7 +39,7 @@ const player = new Player({
     // https://developer.textalive.jp/packages/textalive-app-api/interfaces/PlayerOptions.html
     //
     app: { 
-      token: "---",//Token　★★★★★取得したトークンを追加ください！！！★★★★
+      token: "JSnoy0SqfLGJSE9b",//Token　★★★★★取得したトークンを追加ください！！！★★★★
       parameters: [
       ]
     },
