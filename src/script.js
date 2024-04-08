@@ -399,7 +399,6 @@ class ObjectText{
   constructor(string, PhraseData) {
     this.string = string;
     this.Data = PhraseData;
-
     this.material = new THREE.MeshBasicMaterial({
       color: 0x222222,
       side: THREE.DoubleSide,
@@ -446,7 +445,12 @@ class ObjectText{
         const TEXT = CharElement.char;
         const shapes = Ffont.generateShapes( TEXT, 4 );//文字サイズ
         const TextGeometry = new THREE.ShapeGeometry( shapes, 4 );
+        
         TextGeometry.computeBoundingBox();
+        const bBMax = TextGeometry.boundingBox.max.clone();
+        const bBMin = TextGeometry.boundingBox.min.clone();
+        const YY = (bBMax.y - bBMin.y) / 2 + bBMin.y; // 文字の位置保存   
+        //     
         TextGeometry.center();//Center the geometry based on the bounding box.
 
         const Geotext = new THREE.Mesh( TextGeometry, this.material );
@@ -471,7 +475,7 @@ class ObjectText{
             //const rz = Math.PI*getRandomNum(-1, 1)*2;
 
             // Set
-            Geotext.position.set(PosX, 0, z);
+            Geotext.position.set(PosX, YY, z);
             Geotext.rotation.set(rx, ry, 0);
 
             scene.add(Geotext);
@@ -522,7 +526,7 @@ class ObjectText{
           //const rz = Math.PI*getRandomNum(-1, 1)*2;
 
           // Set
-          Geotext.position.set(PosX, 0, z);
+          Geotext.position.set(PosX, YY, z);
           Geotext.rotation.set(rx, ry, 0);
 
           scene.add(Geotext);
@@ -580,7 +584,6 @@ const positionbarElement = document.getElementById("nav-bar");
 
 function renderLoop() {
     stats.begin();//STATS計測
-
     //const delta = clock.getDelta();//animation programs
     //const elapsedTime = clock.getElapsedTime();
 
