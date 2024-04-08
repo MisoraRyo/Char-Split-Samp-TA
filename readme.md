@@ -29,9 +29,9 @@ npm run dev
 
 ## Song
 
-『初音ミク「マジカルミライ 2023」楽曲コンテスト』の受賞作品6曲
+『初音ミク「マジカルミライ 2024」楽曲コンテスト』の受賞作品6曲
 
-https://magicalmirai.com/2023/procon/
+https://magicalmirai.com/2024/procon/
 
 ## Resource
 
