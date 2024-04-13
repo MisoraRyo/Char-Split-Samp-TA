@@ -39,4 +39,4 @@ Three.js
 
 GSAP
 
-TextAlive.api
+TextAlive api
